@@ -18,9 +18,22 @@ text-align: center;
 	height:300px;
 	
 }
-
+.img-logo{
+	height:300px;
+	padding: 35px;
+}
+.img-product-logo {
+height: 250px;
+padding: 25px;
+}
+/*
+.background-image-holder{
+	background-image: url("http://placehold.it/50x50");
+	 background: url("http://placehold.it/50x50") no-repeat center center fixed; 
+}
+*/
 @media screen and (min-width: 768px){
 .jumbotron {
-padding: 88px 0;
+padding: 68px 0;
 }
 }
