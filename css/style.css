@@ -1,5 +1,5 @@
 body {
-  padding-bottom: 20px;
+ 
 }
 .navbar{
 	margin-bottom: 0px;
@@ -13,18 +13,47 @@ body {
 width: 110px;
 text-align: center;
 }
-
+.white_background{
+	background-color: #fff;
+	width:100%;
+	padding-bottom: 10px;
+}
 .img-main{
-	height:300px;
 	
 }
 .img-logo{
-	height:300px;
-	padding: 35px;
+padding: 35px;
+height: 350px;
 }
 .img-product-logo {
 height: 250px;
 padding: 25px;
+}
+.container_padding{
+padding: 30px 0;
+}
+
+/*
+video stuff
+*/
+img.bg {
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1024px;
+	
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+	
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.jumbotron {
+background-color: transparent;
 }
 /*
 .background-image-holder{
@@ -32,8 +61,17 @@ padding: 25px;
 	 background: url("http://placehold.it/50x50") no-repeat center center fixed; 
 }
 */
+
+
 @media screen and (min-width: 768px){
 .jumbotron {
-padding: 68px 0;
+padding: 18px 0;
 }
+}
+
+@media screen and (max-width: 1024px) { /* Specific to this particular image */
+  img.bg {
+    left: 50%;
+    margin-left: -512px;   /* 50% */
+  }
 }
