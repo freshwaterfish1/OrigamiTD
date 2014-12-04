@@ -63,12 +63,21 @@ background-color: transparent;
 }
 */
 
+@media screen and (max-width: 767px){
+.navbar-default .navbar-nav>.active>a{
+	width: 100%;
+}
+.navbar-default .navbar-nav>li>a{
+	width: 100%;
+}
+}
 
 @media screen and (min-width: 768px){
 .jumbotron {
 padding: 18px 0;
 }
 }
+
 
 
 @media screen and (max-width: 1892px) { /* Specific to this particular image */
