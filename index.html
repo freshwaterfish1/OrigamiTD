@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <link rel="icon" href="favicon.ico">
 
-    <title>Jumbotron Template for Bootstrap</title>
+    <title>OrigamiTD</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -54,10 +54,10 @@
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
 
-
+<!--<img src="http://placehold.it/850x550" class="img-main img-responsive center-block" alt="Responsive image">-->
 
 <div class="jumbotron">
- <img class="bg" src="img/screenshot2.png" alt="An in game screenshot of a tower on a grassy field">
+ <img class="bg" src="img/background_screenshot.jpg" alt="An in game screenshot of a tower on a grassy field">
       <div class="container">
         <!-- <h1>Hello, world!</h1>
         <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p> -->
@@ -78,7 +78,15 @@
           <p>Defend your castle from the onslaught of origami creatures in this tower defense game for the Oculus Rift. Using only one button and the rift, build powerful towers to stop the creatures advance. Use physics to your advantage - force the baddies to maze though your towers. Or even seal off paths altogether with unique towers!</p>
         </div>
         <div class="col-md-6">
-          <img src="http://placehold.it/850x550" class="img-main img-responsive center-block" alt="Responsive image">
+          
+          <picture>
+              <!--[if IE 9]><video style="display: none;"><![endif]-->
+              <source srcset="http://placehold.it/850x550&amp;text=fat+image" media="(min-width: 1200px)">
+              <source srcset="http://placehold.it/750x450&amp;text=less+fat+image" media="(min-width: 1000px)">
+              <!--[if IE 9]></video><![endif]-->
+              <img srcset="http://placehold.it/650x350&amp;text=normal+image" alt="A screenshot of the current build. Enemies avoid tower shots as they advance over a field." class="img-responsive center-block">
+          </picture>
+
        </div>
       </div>
     </div>
@@ -90,13 +98,13 @@
         <img src="img/oculus_logo.png" class="img-product-logo img-circle center-block" alt="Responsive image">
           <h2>Oculus Rift</h2>
           <p>This game is especially designed for the Oculus rift DK2. Your attention is a recourse, not being able to see the entire battlefield at once means you must constantly be reacting to the current threat and planning for future events.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <p><!--<a class="btn btn-default" href="#" role="button">View details &raquo;</a>--></p>
         </div>
         <div class="col-md-6">
         <img src="img/unreal_logo.png" class="img-product-logo img-circle center-block" alt="Responsive image">
           <h2>Unreal Engine 4</h2>
           <p>With the brand new Unreal Engine 4 under the hood, we can deliver beautiful hand folded visuals for you to enjoy in an immersive virtual reality environment. Unreal also delivers a fully physics based tower defense game, where you must be careful to avoid obstacles between your towers and the monsters trying to get through.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <p><!--<a class="btn btn-default" href="#" role="button">View details &raquo;</a>--></p>
        </div>
       <!--   <div class="col-md-4">
         <img src="http://placehold.it/550x550" class="img-product-logo center-block" alt="Responsive image">
@@ -120,6 +128,7 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/picturefill.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <!-- <script src="js/ie10-viewport-bug-workaround.js"></script> -->
   </body>
